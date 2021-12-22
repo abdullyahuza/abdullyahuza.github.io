@@ -368,6 +368,10 @@ i {
       height: 150px;
     }
 
+    #services {
+        margin-top: 150px;
+    }
+
     #services h1 {
         margin: 50px auto -150px;
     }
