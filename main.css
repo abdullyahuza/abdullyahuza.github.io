@@ -7,7 +7,17 @@ Variables
 :root {
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "Cardo", serif;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+
 
 body {
     font-family: Oswald;
@@ -436,6 +446,13 @@ i {
     text-transform: uppercase;
 }
 
+.myp h1 {
+    text-align: center;
+    margin: 100px auto 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
 #projects img {
     width: 100%;
     border-bottom: 1px solid #55198b;
@@ -523,4 +540,181 @@ i:hover {
     border-top: 4px solid;
     border-bottom: 4px solid;
     transform: skewY(-20deg);
+}
+
+.myp {
+    display: grid;
+    place-items: center;
+}
+
+.mypage-content {
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    font-family: var(--font-sans);
+}
+
+@media (min-width: 600px) {
+    .mypage-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .mypage-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.mycard {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+    color: whitesmoke;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+    .mycard {
+        height: 250px;
+        width: 350px;
+        border-radius: 5px;
+    }
+}
+
+.mycard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+    background-position: 0 0;
+    transition: transform calc(var(--d) * 1.5) var(--e);
+    pointer-events: none;
+}
+
+.mycard:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+    transform: translateY(-50%);
+    transition: transform calc(var(--d) * 2) var(--e);
+}
+
+.mycard:nth-child(1):before {
+    background-image: url(1.png);
+}
+
+.mycard:nth-child(2):before {
+    background-image: url(2.png);
+}
+
+.mycard:nth-child(3):before {
+    background-image: url(3.png);
+}
+
+.mycard:nth-child(4):before {
+    background-image: url(4.jpg);
+}
+
+.mycard:nth-child(5):before {
+    background-image: url(5.jpg);
+}
+
+.mycard:nth-child(6):before {
+    background-image: url(1.png);
+}
+
+.mycontent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    transition: transform var(--d) var(--e);
+    z-index: 1;
+}
+
+.mytitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.mydes {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+}
+
+.mybtn {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: #111;
+    background-color: #fff;
+    border: none;
+}
+
+.mybtn:hover {
+    background-color: rgb(29, 26, 26);
+    color: #fff;
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+}
+
+.mybtn:focus {
+    outline: 1px dashed yellow;
+    outline-offset: 3px;
+}
+
+.mycontent {
+    transform: translateY(calc(100% - 4.5rem));
+}
+
+.mycontent>* {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+}
+
+.mycard:hover {
+    align-items: center;
+}
+
+.mycard:hover:before {
+    background: #333;
+}
+
+.mycard:hover:after {
+    transform: translateY(-50%);
+}
+
+.mycard:hover .mycontent {
+    transform: translateY(0);
+}
+
+.mycard:hover .mycontent>* {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
 }
