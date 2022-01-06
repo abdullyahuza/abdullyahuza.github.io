@@ -293,9 +293,10 @@ nav li a:hover {
     z-index: 1;
     box-shadow: 0 0 25px -5px rgb(253, 253, 253);
     transition: transform .8s;
-    height: 405px;
+    min-height: 405px;
     margin: 50px;
     color: #fff;
+    min-width: 80%;
 }
 
 .service-logo {
@@ -313,7 +314,7 @@ nav li a:hover {
 .service h4 {
     height: 35px;
     width: 80%;
-    margin: 50px auto;
+    margin: 20px auto;
     background: #111;
     position: relative;
 }
