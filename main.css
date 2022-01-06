@@ -623,6 +623,10 @@ i:hover {
     background-image: url('./images/An-chatbot.png');
 }
 
+.mycard:nth-child(3):before {
+    background-image: url('./images/messages.png');
+}
+
 .mycontent {
     position: relative;
     display: flex;
