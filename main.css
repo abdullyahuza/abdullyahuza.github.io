@@ -616,11 +616,11 @@ i:hover {
 }
 
 .mycard:nth-child(1):before {
-    background-image: url(./images/ctve.png);
+    background-image: url('./images/ctve.png');
 }
 
 .mycard:nth-child(2):before {
-    background-image: url(./images/An-chatbot.png);
+    background-image: url('./images/An-chatbot.png');
 }
 
 .mycontent {
