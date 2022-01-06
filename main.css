@@ -557,7 +557,7 @@ i:hover {
 
 @media (min-width: 600px) {
     .mypage-content {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -616,27 +616,11 @@ i:hover {
 }
 
 .mycard:nth-child(1):before {
-    background-image: url(1.png);
+    background-image: url(./images/ctve.png);
 }
 
 .mycard:nth-child(2):before {
-    background-image: url(2.png);
-}
-
-.mycard:nth-child(3):before {
-    background-image: url(3.png);
-}
-
-.mycard:nth-child(4):before {
-    background-image: url(4.jpg);
-}
-
-.mycard:nth-child(5):before {
-    background-image: url(5.jpg);
-}
-
-.mycard:nth-child(6):before {
-    background-image: url(1.png);
+    background-image: url(./images/An-chatbot.png);
 }
 
 .mycontent {
