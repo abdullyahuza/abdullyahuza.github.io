@@ -77,7 +77,7 @@ nav li a:hover {
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
-  font-family: Roboto;
+  font-family: Lobster;
 }
 
 .links a:hover {
