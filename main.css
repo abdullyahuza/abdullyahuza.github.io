@@ -182,6 +182,7 @@ nav li a:hover {
   max-width: 270px;
   max-height: 270px;
   border: 5px solid silver;
+  background: #84817a;
 }
 
 #quotes {
