@@ -618,14 +618,18 @@ i:hover {
 }
 
 .mycard:nth-child(1):before {
-    background-image: url('./images/ctve.png');
+    background-image: url('./images/sms-master.png');
 }
 
 .mycard:nth-child(2):before {
-    background-image: url('./images/An-chatbot.png');
+    background-image: url('./images/ctve.png');
 }
 
 .mycard:nth-child(3):before {
+    background-image: url('./images/An-chatbot.png');
+}
+
+.mycard:nth-child(4):before {
     background-image: url('./images/messages.png');
 }
 
