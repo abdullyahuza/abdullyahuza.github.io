@@ -618,22 +618,26 @@ i:hover {
 }
 
 .mycard:nth-child(1):before {
-    background-image: url('./images/odfel-sas.png');
+    background-image: url('./images/kadpoly-siwes-ms.png');
 }
 
 .mycard:nth-child(2):before {
-    background-image: url('./images/sms-master.png');
+    background-image: url('./images/odfel-sas.png');
 }
 
 .mycard:nth-child(3):before {
-    background-image: url('./images/ctve.png');
+    background-image: url('./images/sms-master.png');
 }
 
 .mycard:nth-child(4):before {
-    background-image: url('./images/antecare.png');
+    background-image: url('./images/ctve.png');
 }
 
 .mycard:nth-child(5):before {
+    background-image: url('./images/antecare.png');
+}
+
+.mycard:nth-child(6):before {
     background-image: url('./images/messages.png');
 }
 
