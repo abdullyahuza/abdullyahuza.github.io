@@ -177,7 +177,7 @@ i {
         align-items: center;
         width: 90%;
         height: 50vh;
-        margin: 0 auto;
+        margin: 0px auto 200px auto;
     }
 
     .welcome {
@@ -236,7 +236,7 @@ i:hover {
 
 @media (max-width: 800px) {
     .contact {
-        margin-top: 100px;
+        margin-top: 0;
     }
 }
 
