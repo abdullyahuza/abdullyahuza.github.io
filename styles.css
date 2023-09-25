@@ -289,3 +289,39 @@ i:hover {
 }
 
 /* Projects */
+
+
+/*Mobile*/
+@media (max-width: 480px){
+    /*styles*/
+
+}
+
+/*Extra small devices*/
+@media (min-width: 481px) and (max-width: 767px){
+    /*styles*/
+
+}
+
+/*Small Tablets*/
+@media (min-width: 768px) and (max-width: 991px){
+    /*styles*/
+
+}
+
+/*Large Tablets / Laptops*/
+@media (min-width: 992px) and (max-width: 1199px){
+    /*styles*/
+
+}
+
+/*Desktops*/
+@media (min-width: 1200px) and (max-width: 1919px){
+    /*styles*/
+
+}
+
+/*Extra Large Screen*/
+@media (min-width: 1920px) {
+    /*styles*/
+}
