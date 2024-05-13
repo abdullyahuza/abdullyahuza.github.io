@@ -5,7 +5,6 @@ const quote = []
 
 const quotes = [
     'The best teacher is experience learned from failures.',
-    'In all chaos there is a cosmos, in all disorder a secret order.',
     'He who angers you conquers you.',
     'Good luck is another name for tenacity of purpose.',
     'Believe you can and you are halfway there.',
